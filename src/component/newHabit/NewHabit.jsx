@@ -27,6 +27,7 @@ export const NewHabit = () => {
           <input
             type="text"
             placeholder="name"
+            required
             onChange={(e) =>
               setNewHabitData({ ...newHabitData, title: e.target.value })
             }
@@ -96,8 +97,10 @@ export const NewHabit = () => {
         <button
           className="save__habit"
           onClick={() => {
-            setShowCreateHabit(false);
-            dispatch({ type: "ADD__NEW__HABIT", payload: newHabitData });
+            if (newHabitData.title !== "") {
+              setShowCreateHabit(false);
+              dispatch({ type: "ADD__NEW__HABIT", payload: newHabitData });
+            }
           }}
         >
           Save
