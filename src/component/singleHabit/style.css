@@ -1,0 +1,98 @@
+
+
+.single__habit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4.5rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #9999;
+    z-index: 10;
+}
+
+.single__habit__box{
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    height: 80%;
+    background: #ffff;
+    border-radius: 1rem;
+
+}
+.close__habit__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 0.2rem;
+    top: 0.2rem;
+    color: red;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+.single__habit__box h1{
+    display: flex;
+    width: 80%;
+    margin: 2rem 0;
+    color: #444;
+}
+
+.single__habit__box p{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 80%;
+    height: 2rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #999;
+    margin: 0.5rem;
+}
+
+.single__habit__box p b{
+    width: 30%;
+    color: #444;
+}
+
+.action__btns{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 2rem;
+
+}
+.action__btns button{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 5rem;
+height: 2rem;
+border: none;
+background: none;
+
+}
+
+.action__btns .edit__btn{
+    color: #444;
+
+}
+.action__btns .archive__btn{
+    color: #f58f36;
+}
+
+.action__btns .delete__btn{
+    color: red;
+}

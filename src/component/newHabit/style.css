@@ -1,0 +1,112 @@
+
+.new__habit__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4.5rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #9999;
+    z-index: 10;
+}
+.new__habit__main{
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    height: 80%;
+    background: #ffff;
+    border-radius: 1rem; 
+    padding: 1rem;
+}
+
+.new__habit__main h1{
+    color: #444;
+}
+.cancel__add__habit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 0.2rem;
+    top: 0.2rem;
+    color: red;
+    background: none;
+    border: none;
+    cursor: pointer; 
+}
+
+.habit__name__input{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 2rem 0;
+    font-size: 1.3rem;
+}
+.habit__name__input input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+    outline: none;
+    font-size: 1.1rem;
+    border-radius: 5px ;
+    border: 2px solid #777;
+    margin-top: 0.2rem;
+}
+
+.new__habit__details{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.new__habit__details section{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    height: 5rem;
+    margin: auto;
+}
+
+.new__habit__details section span{
+    display: flex;
+    /* height: 2.5rem; */
+    font-size: 1.2rem;
+}
+.new__habit__details section select{
+    display: flex;
+    height: 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+
+
+}
+
+.new__habit__details section select option{
+    height: 2rem;
+}
+
+
+.save__habit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #5bfba6;
+    color: #918f8f;
+    cursor: pointer;
+    margin-top: 2rem;
+}
